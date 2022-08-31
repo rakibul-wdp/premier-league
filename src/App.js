@@ -1,10 +1,12 @@
 import { Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Banner from './components/Banner';
+import Navbar from './components/shared/Navbar';
 
 function App() {
   return (
     <>
       <Navbar />
+      <Banner />
       <Routes></Routes>
     </>
   );
