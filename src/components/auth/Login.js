@@ -49,7 +49,7 @@ const Login = () => {
     alert('Sent email');
   };
   return (
-    <div className='flex justify-center items-center h-[80vh] my-28'>
+    <div className='flex justify-center items-center h-[60vh] my-28'>
       <div className='card w-96 bg-base-100 shadow-xl'>
         <div className='card-body'>
           <h2 className='text-center text-2xl font-bold'>Login</h2>
