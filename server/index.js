@@ -19,6 +19,15 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     await client.connect();
+    const playerCollection = client.db('premier_league').collection('players');
+
+    // get players data
+    app.get('/players', async (req, res) => {
+      const query = {};
+      const cursor = playerCollection.find(query);
+      const players = await cursor.toArray();
+      res.send(players);
+    });
   } finally {
     // some kind of that stop this function
   }
