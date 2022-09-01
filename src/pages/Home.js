@@ -1,13 +1,12 @@
 import React from 'react';
 import Banner from '../components/Banner';
-import usePlayers from '../hooks/usePlayers';
+import Players from '../components/players/Players';
 
 const Home = () => {
-  const [players] = usePlayers();
   return (
     <>
       <Banner />
-      {players.length}
+      <Players />
     </>
   );
 };
