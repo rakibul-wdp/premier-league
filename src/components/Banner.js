@@ -1,13 +1,11 @@
 import React from 'react';
-import './Banner.css';
 
 const Banner = () => {
   return (
     <div
       className='hero min-h-[60vh]'
       style={{
-        backgroundImage:
-          'url(https://thumbs.dreamstime.com/b/close-up-premier-league-flag-waving-wind-london-eng-july-top-level-english-football-system-illustrative-editorial-254493045.jpg)',
+        backgroundImage: 'url(https://cdn.coingape.com/wp-content/uploads/2022/06/06184931/premier-league-crypto.jpg)',
       }}
     >
       <div className='hero-overlay bg-opacity-60'></div>
