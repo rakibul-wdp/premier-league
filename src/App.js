@@ -1,14 +1,15 @@
-import { Routes } from 'react-router-dom';
-import Banner from './components/Banner';
+import { Route, Routes } from 'react-router-dom';
 import Footer from './components/shared/Footer';
 import Navbar from './components/shared/Navbar';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Banner />
-      <Routes></Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
       <Footer />
     </>
   );
