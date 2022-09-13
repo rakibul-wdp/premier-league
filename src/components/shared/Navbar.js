@@ -8,7 +8,7 @@ const Navbar = () => {
         <Link to={'/'}>Home</Link>
       </li>
       <li>
-        <a>Dashboard</a>
+        <Link to={'/dashboard'}>Dashboard</Link>
       </li>
     </>
   );
@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className='navbar bg-secondary px-72 py-4'>
       <div className='navbar-start'>
         <div className='dropdown'>
-          <label tabIndex='0' className='btn btn-ghost lg:hidden'>
+          <label tabIndex='0' className='btn btn-ghost lg:hidden text-base-100'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5'
@@ -49,6 +49,17 @@ const Navbar = () => {
         <Link to={'/login'} className='btn bg-secondary text-base-100 font-fold text-lg'>
           SignUp/LogIn
         </Link>
+        <label tabIndex='1' htmlFor='dashboard-sidebar' className='btn btn-ghost lg:hidden text-base-100'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            className='h-5 w-5'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+          >
+            <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M4 6h16M4 12h8m-8 6h16' />
+          </svg>
+        </label>
       </div>
     </div>
   );
